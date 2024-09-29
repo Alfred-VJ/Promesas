@@ -1,6 +1,6 @@
 const apiUrl = "https://dragonball-api.com/api/characters?page1&limit=100";
 
-function obtenerData (Url) {
+function obtenerData (apiUrl) {
     fetch(apiUrl)
     .then(res => {
         return new Promise((result, reject) => {
@@ -12,4 +12,4 @@ function obtenerData (Url) {
     })
 }
 
-obtenerData();
+obtenerData(apiUrl);
